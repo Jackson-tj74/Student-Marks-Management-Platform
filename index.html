@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Student Marks Management Platform</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <h1 class="header1">
+        Student Marks Management Platform
+    </h1>
+
+  
+    <form id="studentForm">
+
+        <input 
+          type="text" 
+          id="Name" 
+          placeholder="Student Name"
+        >
+
+        <input 
+          type="text" 
+          id="Course1" 
+          placeholder="Course 1"
+        >
+
+        <input 
+          type="number" 
+          id="Marks1" 
+          placeholder="Marks 1"
+        >
+
+        <input 
+          type="text" 
+          id="Course2" 
+          placeholder="Course 2"
+        >
+
+        <input 
+          type="number" 
+          id="Marks2" 
+          placeholder="Marks 2"
+        >
+
+        <button class="btn1">
+            Add Student
+        </button>
+
+    </form>
+
+ 
+    <table border="1" width="100%" cellpadding="10">
+
+        <thead>
+
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Course 1</th>
+                <th>Marks 1</th>
+                <th>Course 2</th>
+                <th>Marks 2</th>
+                <th>Average</th>
+                <th>Grade</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="studentTableBody">
+
+        </tbody>
+
+    </table>
+
+    <br><br>
+
+    <div class="totalData">
+
+        <p>
+            Total Students :
+            <span id="totalStudents">0</span>
+        </p>
+
+        <p>
+            Pass Students :
+            <span id="passStudents">0</span>
+        </p>
+
+        <p>
+            Fail Students :
+            <span id="failStudents">0</span>
+        </p>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
